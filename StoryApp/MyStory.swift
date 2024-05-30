@@ -9,9 +9,10 @@ import SwiftUI
 
 let story = Story(pages: [
     StoryPage( // 0
+    ///write story out with different choices and destinations
         """
         Welcome to Choose Your Own Adventure Story!
-        Music Edition!
+        Band Edition!
 
         Welcome to the Band! Which instrument do you want to play?
         """,
@@ -21,6 +22,7 @@ let story = Story(pages: [
             Choice(text: "Vocals", destination: 2),
         ]
     ),
+    ///tells which page the story is on and numbers the pages fo destination
     StoryPage( // 1
         """
         Nice, lets go to the music store to buy your instrument, what color were you thinkin' for it?
@@ -119,7 +121,7 @@ let story = Story(pages: [
     ),
     StoryPage( // 11
         """
-        Sound good bro, time to play our show!
+        Sounds good bro, time to play our show!
 
         Congrats, you played your first show with the band!
         """,

@@ -17,13 +17,12 @@ struct StoryPageView: View {
             ScrollView {
                 Text(story[pageIndex].text)
             }
-            
             ForEach(story[pageIndex].choices, id: \Choice.text) { choice in NavigationLink(destination: StoryPageView(story: story, pageIndex: choice.destination)) {
                 Text(choice.text)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
-                    .background(Color.pink.opacity(0.25))
+                    .background(Color.red.opacity(0.75))
                     .cornerRadius(8)
             }
             }

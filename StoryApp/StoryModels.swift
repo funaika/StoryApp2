@@ -6,7 +6,7 @@
 //
 
 struct Story {
-    
+    ///struct to keep pages counted and refer back to for destination and choices
     let pages: [StoryPage]
     
     subscript(_ pageIndex: Int) -> StoryPage {
